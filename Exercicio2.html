@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02</title>
+</head>
+<body>
+    <script>
+        let horaDeterminada = prompt('Digite a hora.');
+        let minutosDeterminado = prompt('Digite o minuto.');
+        let segundosDeterminado = prompt('Digite os segundos.');
+        
+        hora = Number(3600)
+        minutos = Number(60)
+
+        let totalSegundos= ((Number(horaDeterminada)*Number(hora))+(Number(minutosDeterminado)*Number(minutos))+Number(segundosDeterminado));
+      
+        window.document.write(`Hora: ${horaDeterminada} </br>`);
+        window.document.write(`Minutos: ${minutosDeterminado} </br>`);
+        window.document.write(`Segundos: ${segundosDeterminado} </br>`);
+        window.document.write(`Total em Segundos: ${totalSegundos} </br>`);
+
+    </script>
+</body>
+</html>
