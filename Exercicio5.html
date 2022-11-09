@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 05</title>
+</head>
+
+<body>
+    <button onclick="menu()">Calcular</button>
+    <script>
+        function menu() {
+            let nome = prompt("Digite seu nome");
+            let hotdog = prompt("Digite a quantidade de Hot Dog");
+            let hamburguer = prompt("Digite a quantidade de Hambúrguer");
+            let cheeseburguer = prompt("Digite a quantidade Cheeseburguer");
+            let refri = prompt("Digite a quantidade de Refrigerante em lata");
+            let batata = prompt("Digite a quantidade de Batatas fritas");
+
+            valor1 = Number(1) * Number(hotdog)
+            valor2 = Number(1.3) * Number(hamburguer)
+            valor3 = Number(1.5) * Number(cheeseburguer)
+            valor4 = Number(1) * Number(refri)
+            valor5 = Number(.8) * Number(batata)
+
+            let totalPedido = (Number(valor1) + Number(valor2) + Number(valor3) + Number(valor4) + Number(valor5));
+
+            window.document.write("Nome: " + nome + "</br>");
+            window.document.write(`Valor R$: ${totalPedido} </br>`);
+        }
+    </script>
+
+
+</body>
+
+</html>
